@@ -2,7 +2,7 @@ requests
 pytest
 joblib
 plotly
-seabornl
+seaborn
 matplotlib
 PIL 
 streamlit
