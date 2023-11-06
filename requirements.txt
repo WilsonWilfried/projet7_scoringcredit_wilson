@@ -9,6 +9,5 @@ streamlit
 pandas
 scikit-learn
 flask 
-json
+json5
 shap
-git
