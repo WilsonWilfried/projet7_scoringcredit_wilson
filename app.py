@@ -10,6 +10,7 @@ import json
 from sklearn.neighbors import NearestNeighbors
 import shap
 import git
+from importlib.metadata import version
 # from custtransformer import CustTransformer
 #from P7_functions import CustTransformer
 from sklearn.feature_selection import SelectFromModel
