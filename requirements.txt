@@ -7,7 +7,7 @@ matplotlib
 Pillow==9.2.0 
 streamlit
 pandas
-sklearn
+scikit-learn
 flask 
 json
 shap
