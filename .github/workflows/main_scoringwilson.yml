@@ -32,7 +32,7 @@ jobs:
 
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Run unit tests
-        run: python -m pytest
+        run: pytest tests.py
 
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v3
