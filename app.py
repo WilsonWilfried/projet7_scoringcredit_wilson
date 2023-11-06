@@ -9,7 +9,7 @@ from flask import Flask, jsonify, request
 import json
 from sklearn.neighbors import NearestNeighbors
 import shap
-
+import git
 # from custtransformer import CustTransformer
 #from P7_functions import CustTransformer
 from sklearn.feature_selection import SelectFromModel
@@ -39,6 +39,16 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 # view when API is launched
 # Test local : http://127.0.0.1:5000
+
+@app.route('/mysite', methods=['POST'])
+def webhook():
+    if request.method == 'POST':
+        repo = git.Repo('C:/Users/WILSON/Documents/projet7')
+        origin = repo.remotes.origin
+        origin.pull()
+        return 'Updated PythonAnywhere successfully', 200
+    else:
+        return 'Wrong event type', 400
 
 @app.route("/")
 def index():
