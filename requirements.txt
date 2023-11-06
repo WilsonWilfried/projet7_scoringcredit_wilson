@@ -1,0 +1,14 @@
+requests
+pytest
+joblib
+plotly
+seabornl
+matplotlib
+PIL 
+streamlit
+pandas
+sklearn
+flask 
+json
+shap
+git
