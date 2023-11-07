@@ -42,7 +42,9 @@ jobs:
   # Azure login
   - uses: azure/login@v1
     with:
-     creds: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71A65CE069C74ADCBD79DC4E70003C12 }}
+     app-name: 'scoringwilson'
+     slot-name: 'Production'
+     publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_71A65CE069C74ADCBD79DC4E70003C12 }}
   - uses: azure/appservice-settings@v1
     with:
      app-name: ${{ env.AZURE_WEBAPP_NAME }}
