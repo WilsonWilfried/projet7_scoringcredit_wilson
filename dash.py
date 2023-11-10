@@ -15,7 +15,7 @@ from PIL import Image
 import streamlit.components.v1 as components
 
 def main():
-
+    print('Hello')
     # -----------------------------------------------
     st.set_page_config(page_title='Tableau de bord de demandes de crédit',
                        page_icon='🧊',
