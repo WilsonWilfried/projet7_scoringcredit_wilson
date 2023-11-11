@@ -16,3 +16,14 @@ st.write("""
 # My first app
 Hello *world!*
 """)
+def main():
+
+    # -----------------------------------------------
+    st.set_page_config(page_title='Tableau de bord de demandes de crédit',
+                       page_icon='🧊',
+                       layout='centered',
+                       initial_sidebar_state='auto')
+    # Display the title
+    st.title('Tableau de bord de demandes de prêt')
+    st.subheader("WILSON Adjete - Data Scientist")
+ main()
