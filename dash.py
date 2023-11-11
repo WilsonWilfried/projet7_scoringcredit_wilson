@@ -26,4 +26,4 @@ def main():
     # Display the title
     st.title('Tableau de bord de demandes de prêt')
     st.subheader("WILSON Adjete - Data Scientist")
- main()
+    main()
