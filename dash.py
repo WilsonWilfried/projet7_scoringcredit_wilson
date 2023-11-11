@@ -16,7 +16,15 @@ st.set_page_config(page_title='Tableau de bord de demandes de crédit',
                        page_icon='🧊',
                        layout='centered',
                        initial_sidebar_state='auto')
-    # Display the title
+# Display the title
 st.title('Tableau de bord de demandes de prêt')
 st.subheader("WILSON Adjete - Data Scientist")
-   
+# Display the LOGO
+img = Image.open("LOGO.png")
+st.sidebar.image(img, width=250)
+
+# # Display the loan image
+img = Image.open("loan.jpg")
+st.image(img, width=100)
+    
+TIMEOUT = (5, 30)   
