@@ -11,13 +11,6 @@ import seaborn as sns
 import shap
 import matplotlib.pyplot as plt
 from PIL import Image
- 
-st.write("""
-# My first app
-Hello *world!*
-""")
-
-
     # -----------------------------------------------
 st.set_page_config(page_title='Tableau de bord de demandes de crédit',
                        page_icon='🧊',
