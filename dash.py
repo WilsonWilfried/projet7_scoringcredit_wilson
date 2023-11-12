@@ -185,14 +185,14 @@ if st.sidebar.checkbox("Décision sur le crédit", key=38):
     # Get score & threshold model
     score, threshold_model = get_score_model(selected_id)
     # Display score (default probability)
-    st.write('score obtenue : {:.0f}%'.format(score * 100))
+    st.write('Defaut score obtenue : {:.0f}%'.format(score * 100))
     # Display default threshold
-    st.write('seuil à atteindre pour accord de credit : {:.0f}%'.format(threshold_model * 100))  #
+    st.write('Seuil defaut à ne pas dépasser pour accord de credit : {:.0f}%'.format(threshold_model * 100))  #
     # Compute decision according to the best threshold (False= loan accepted, True=loan refused)
     if score >= threshold_model:
-        decision = "Prêt accordé"
-    else:
         decision = "Prêt rejetté"
+    else:
+        decision = "Prêt accordé"
     st.write("Decision :", decision)
     
     figure = gauge_plot(score, threshold_model)
